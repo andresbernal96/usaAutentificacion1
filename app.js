@@ -17,7 +17,7 @@ var User = require("./models/user");
 //Mongoose
 var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://172.30.10.55:27017/Test");
+mongoose.connect("mongodb://prueba:prueba@ds139480.mlab.com:39480/basededatosregisto");
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -48,8 +48,8 @@ passport.use(new LocalStrategy(
 passport.use(
   new FacebookStrategy(
     {
-      clientID: '1999330080294299',
-      clientSecret: '0a1a06086c79b0c10d8c13d0967ca193',
+      clientID: '1815710885419830',
+      clientSecret: '8579395b47fe5023fad41af7e9206ab0',
       callbackURL: "http://localhost:3000/users/auth/facebook/callback",
       profileFields: ["email", "displayName"]
     },
