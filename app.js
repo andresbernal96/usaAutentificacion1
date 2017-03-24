@@ -68,7 +68,7 @@ passport.use(
                 newUser.facebook.token = token;
                 newUser.facebook.name = profile.displayName;
                 newUser.facebook.email = profile.gender;
-                newUser.facebook.email = profile.age_range;
+                newUser.facebook.rango = profile.age_range;
                 newUser.save(
                   function (err) {
                     if (err)
