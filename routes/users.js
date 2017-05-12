@@ -12,7 +12,7 @@ var urlencodedParse = bodyParse.urlencoded({ extend: false });
 router.post("/iniciarSesion", urlencodedParse, function (req, res, next) {
   passport.authenticate('local',
     {
-      sucessRedirect: "/bienvenido",
+      sucessRedirect: "/tienda",
       failureRedirect: "/login"
     },
     function (err, usuario, info) {
@@ -72,8 +72,9 @@ router.get('/auth/facebook',
 router.get('/auth/facebook/callback',
   passport.authenticate('facebook', {failureRedirect:'login'}),
     function(req, res){
-      res.redirect("/bienvenido");
+      res.redirect("/tienda");
     }
   );
+
 
 module.exports = router;

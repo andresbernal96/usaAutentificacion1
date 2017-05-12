@@ -1,0 +1,44 @@
+ h3{
+  color:white; 
+  text-shadow: 2px 2px 3px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.list-group-item{
+  display: inline;
+}
+
+.badge-Blue h6{
+  color:white;
+background-color: red;
+border: 1px solid darkred;
+border-radius: 5px;
+padding: 5px;
+margin: 5px;
+}
+.cuerpo{
+  background:url(../images/Sports.png);
+    background-repeat: repeat;
+
+}
+.navbar-toggle {
+  background-color: #006064;
+  }
+.navbar-fixed-top{
+  color: black;
+  height: 30px;
+background-color: darkcyan;
+}
+.navbar-collapse {
+  background-color: darkcyan;
+}
+.navbar-right{
+  background-color: darkcyan;
+}
+.icon-bar{
+  background-color: white;
+}
+.navbar-header button{
+  height: 35px;
+}
+.modal{
+  background-color: grey;
+}
